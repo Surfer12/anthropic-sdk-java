@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // This is where your dependencies should be declared.
+    implementation("com.anthropic:anthropic-java-client:0.1.0-alpha.9") // Make sure to use the correct version
+    implementation("com.anthropic:anthropic-java-core:0.1.0-alpha.9")   // Ensure core version matches client version
+}
+
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+include ':anthropic-java'
+project(':anthropic-java').projectDir = new File('/Users/ryanoates/anthropic_calls/anthropic-sdk-java/anthropic-java-core')
+
+rootProject.name = 'anthropic-java-example'
+include 'main'
