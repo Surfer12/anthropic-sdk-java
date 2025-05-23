@@ -5,3 +5,9 @@
 build
 codegen.log
 kls_database.db
+
+# pixi environments
+.pixi
+*.egg-info
+# magic environments
+.magic
