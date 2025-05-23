@@ -32,6 +32,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/httpx-0.28.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/huggingface_hub-0.31.4-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/icu-75.1-hfee45f7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/idna-3.10-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/jiter-0.10.0-py313hdde674f_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libcxx-20.1.5-ha82da77_0.conda
@@ -40,8 +41,11 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/liblzma-5.8.1-h39f12f2_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libmpdec-4.0.0-h99b78c6_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libsqlite-3.49.2-h3f77e49_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libuv-1.50.0-h5505292_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.1-h8359307_2.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/maven-3.9.9-hce30654_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.5-h5e97a16_3.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/nodejs-22.13.0-h02a13b7_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-22.0.1-h363fedd_1.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openssl-3.5.0-h81ee809_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-25.0-pyh29332c3_1.conda
@@ -65,6 +69,8 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/urllib3-2.4.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/yaml-0.2.5-h3422bc3_2.tar.bz2
+      - conda: https://conda.anaconda.org/conda-forge/noarch/yarn-4.9.1-hd25539a_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zlib-1.3.1-h8359307_2.conda
       - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstandard-0.23.0-py313h90d716c_2.conda
 packages:
 - conda: https://conda.anaconda.org/conda-forge/noarch/annotated-types-0.7.0-pyhd8ed1ab_1.conda
@@ -332,6 +338,15 @@ packages:
   license_family: MIT
   size: 17397
   timestamp: 1737618427549
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/icu-75.1-hfee45f7_0.conda
+  sha256: 9ba12c93406f3df5ab0a43db8a4b4ef67a5871dfd401010fbe29b218b2cbe620
+  md5: 5eb22c1d7b3fc4abb50d92d621583137
+  depends:
+  - __osx >=11.0
+  license: MIT
+  license_family: MIT
+  size: 11857802
+  timestamp: 1720853997952
 - conda: https://conda.anaconda.org/conda-forge/noarch/idna-3.10-pyhd8ed1ab_1.conda
   sha256: d7a472c9fd479e2e8dcb83fb8d433fce971ea369d704ece380e876f9c3494e87
   md5: 39a4f67be3286c86d696df570b1201b7
@@ -413,6 +428,15 @@ packages:
   license: Unlicense
   size: 899462
   timestamp: 1746637228408
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/libuv-1.50.0-h5505292_0.conda
+  sha256: d13fb49d4c8262bf2c44ffb2c77bb2b5d0f85fc6de76bdb75208efeccb29fce6
+  md5: 20717343fb30798ab7c23c2e92b748c1
+  depends:
+  - __osx >=11.0
+  license: MIT
+  license_family: MIT
+  size: 418890
+  timestamp: 1737016751326
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/libzlib-1.3.1-h8359307_2.conda
   sha256: ce34669eadaba351cd54910743e6a2261b67009624dbc7daeeafdef93616711b
   md5: 369964e85dc26bfe78f41399b366c435
@@ -424,6 +448,17 @@ packages:
   license_family: Other
   size: 46438
   timestamp: 1727963202283
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/maven-3.9.9-hce30654_0.conda
+  sha256: 39bacf6ecb67b880f1f9dac64ef482e46737f88603e28db516bec480eda87fb8
+  md5: af8e2a59a654f6d1b8d5a5a87a937eda
+  depends:
+  - openjdk
+  arch: arm64
+  platform: osx
+  license: Apache-2.0
+  license_family: APACHE
+  size: 8793535
+  timestamp: 1723935563639
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/ncurses-6.5-h5e97a16_3.conda
   sha256: 2827ada40e8d9ca69a153a45f7fd14f32b2ead7045d3bbb5d10964898fe65733
   md5: 068d497125e4bf8a66bf707254fff5ae
@@ -432,6 +467,21 @@ packages:
   license: X11 AND BSD-3-Clause
   size: 797030
   timestamp: 1738196177597
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/nodejs-22.13.0-h02a13b7_0.conda
+  sha256: d390651526630468e385a74474bb3f17849861182257c161bbca8fca7734d578
+  md5: 93cd91b998422ebf2dace6c13c1842ce
+  depends:
+  - __osx >=11.0
+  - icu >=75.1,<76.0a0
+  - libcxx >=18
+  - libuv >=1.50.0,<2.0a0
+  - libzlib >=1.3.1,<2.0a0
+  - openssl >=3.4.0,<4.0a0
+  - zlib
+  license: MIT
+  license_family: MIT
+  size: 15490642
+  timestamp: 1737401388520
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/openjdk-22.0.1-h363fedd_1.conda
   sha256: 264b338a2a8248c889daa3a23a4e0dc9ce7993901c3cc9758fae2d6b107e697f
   md5: 9a063c97afe39a816ed57e57244c6e82
@@ -687,6 +737,26 @@ packages:
   license_family: MIT
   size: 88016
   timestamp: 1641347076660
+- conda: https://conda.anaconda.org/conda-forge/noarch/yarn-4.9.1-hd25539a_1.conda
+  sha256: b106c12aaf7a74801768936fa29f53a969312d4fcb165f327fc0875b56437619
+  md5: 1e1a45c51540f683abb1fe5e8daf7c2a
+  depends:
+  - __unix
+  - nodejs >=18.12.1
+  license: BSD-2-Clause
+  license_family: BSD
+  size: 991111
+  timestamp: 1744730889881
+- conda: https://conda.anaconda.org/conda-forge/osx-arm64/zlib-1.3.1-h8359307_2.conda
+  sha256: 58f8860756680a4831c1bf4f294e2354d187f2e999791d53b1941834c4b37430
+  md5: e3170d898ca6cb48f1bb567afb92f775
+  depends:
+  - __osx >=11.0
+  - libzlib 1.3.1 h8359307_2
+  license: Zlib
+  license_family: Other
+  size: 77606
+  timestamp: 1727963209370
 - conda: https://conda.anaconda.org/conda-forge/osx-arm64/zstandard-0.23.0-py313h90d716c_2.conda
   sha256: 70ed0c931f9cfad3e3a75a1faf557c5fc5bf638675c6afa2fb8673e4f88fb2c5
   md5: 1f465c71f83bd92cfe9df941437dcd7c

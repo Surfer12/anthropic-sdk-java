@@ -1,0 +1,23 @@
+{
+  "name": "anthropic-sdk-java",
+  "version": "1.0.0",
+  "description": "<!-- x-release-please-start-version -->",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Surfer12/anthropic-sdk-java.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Surfer12/anthropic-sdk-java/issues"
+  },
+  "homepage": "https://github.com/Surfer12/anthropic-sdk-java#readme",
+  "devDependencies": {
+    "@stoplight/prism-cli": "^5.14.2"
+  }
+}

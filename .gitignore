@@ -11,3 +11,4 @@ kls_database.db
 *.egg-info
 # magic environments
 .magic
+node_modules
